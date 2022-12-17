@@ -7,16 +7,11 @@ public class WeaponBase : MonoBehaviour
 {
     [SerializeField] 
     private Sprite body;
-    
-    [SerializeField]
-    private GameObject projectile;
-    
-    
     [SerializeField] 
-    private float fireRate = 1;
-
-    private GameObject lastProjectile;
-
+    private GameObject projectileStartPoint;
+    
+    public GameObject projectile;
+    
     private void Start()
     {
         if (body)
@@ -27,6 +22,6 @@ public class WeaponBase : MonoBehaviour
 
     public void Fire()
     {
-        Instantiate(projectile, transform.position, transform.parent.rotation);
+        Instantiate(projectile, projectileStartPoint.transform.position, transform.parent.rotation);
     }
 }

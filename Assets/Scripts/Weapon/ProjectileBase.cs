@@ -8,7 +8,7 @@ public class ProjectileBase : MonoBehaviour
     private float projectileSpeed;
     
     [SerializeField]
-    private float damage;
+    public float damage;
 
     void Update()
     {
@@ -17,7 +17,7 @@ public class ProjectileBase : MonoBehaviour
     
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Player")
         {
             collision.gameObject.SendMessage("ApplyDamage", damage);
         }

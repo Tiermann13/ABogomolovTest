@@ -11,8 +11,6 @@ public class ClickToMove : MonoBehaviour
     private Vector3 targetPosition;
     private Quaternion rotationToTarget;
     
-    
-    
     void Update()
     {
         if (Input.GetMouseButton(0))
@@ -21,7 +19,6 @@ public class ClickToMove : MonoBehaviour
             RotateToTarget();
             isMoving = true;
         }
-
         if (isMoving)
         {
             MoveToTarget();

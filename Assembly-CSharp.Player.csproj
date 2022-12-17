@@ -41,10 +41,13 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Enemy\EnemyController.cs" />
+     <Compile Include="Assets\Scripts\Enemy\EnemyManager.cs" />
      <Compile Include="Assets\Scripts\Player\ClickToMove.cs" />
-     <Compile Include="Assets\Scripts\Weapon\WeaponBase.cs" />
-     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Weapon\ProjectileBase.cs" />
+     <Compile Include="Assets\Scripts\Weapon\WeaponBase.cs" />
+     <Compile Include="Assets\Scripts\Enemy\ChaseAndAttack.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
      <Folder Include="Assets" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.6\Lib\Editor\PlasticSCM\localization\mergetool.ja.txt" />
      <None Include="Library\PackageCache\com.unity.collab-proxy@1.17.6\Lib\Editor\PlasticSCM\localization\images.zh-Hans.txt" />
